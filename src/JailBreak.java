@@ -244,6 +244,7 @@ public class JailBreak implements ActionListener {
 			}
 		}
 		else {
+			System.out.println("debug statemnt: " + clickedSquare.getType());
 			kingpinPiece = selectedSquare.getPiece();
 			List<GameSquare> path = gameBoard.buildPath(selectedSquare, clickedSquare);
 //			 kingpinPiece.canMoveToLocation(List<GameSquare> path);
