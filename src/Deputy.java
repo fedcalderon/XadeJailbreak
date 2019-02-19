@@ -8,8 +8,8 @@ public class Deputy extends AbstractGamePiece {
 	}
 	protected boolean isSquareRestricted(GameSquare step) {
 		GameSquare.getType();
-	   (GameSquare.TYPE_JAIL);
-	   return true;
+//	    GameSquare.TYPE_JAIL;
+	    return true;
 	}
 
 	public boolean hasEscaped() {
