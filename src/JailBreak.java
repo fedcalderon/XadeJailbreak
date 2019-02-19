@@ -209,9 +209,7 @@ public class JailBreak implements ActionListener {
 	private void handleClickedSquare(GameSquare clickedSquare, AbstractGamePiece kingpinPiece) {
 		if (clickedSquare.getPiece() != null) {
 			// For debugging
-			System.out.println(String.format("You clicked [%d,%d] = %s", 
-					clickedSquare.getCol(), 
-					clickedSquare.getRow(),
+			System.out.println(String.format("You clicked [%d,%d] = %s", clickedSquare.getCol(), clickedSquare.getRow(),
 					gameBoard.getPiece(clickedSquare.getCol(), clickedSquare.getRow()).myAbbreviation));
 
 			// First Case
@@ -242,18 +240,18 @@ public class JailBreak implements ActionListener {
 					clickCounter++;
 				}
 			}
-		}
-		else {
+		} else {
 			System.out.println("debug statemnt: " + clickedSquare.getType());
 			kingpinPiece = selectedSquare.getPiece();
 			List<GameSquare> path = gameBoard.buildPath(selectedSquare, clickedSquare);
 //			 kingpinPiece.canMoveToLocation(List<GameSquare> path);
-			 clickedSquare.setPiece(kingpinPiece);
-			 selectedSquare.clearSquare();
-			 selectedSquare.deselect();
-			 selectedSquare = null;
-			 changePlayerTurn();
-			
+			clickedSquare.setPiece(kingpinPiece);
+			selectedSquare.clearSquare();
+			selectedSquare.deselect();
+			selectedSquare = null;
+			changePlayerTurn();
+			System.out.println("debug statemnt: " + clickedSquare.getType());
+			System.out.println("debug statemnt: " + clickedSquare.getType());
 		}
 	}
 
