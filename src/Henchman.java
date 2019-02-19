@@ -8,7 +8,7 @@ public class Henchman extends AbstractGamePiece {
 	}
 	protected boolean isSquareRestricted(GameSquare step) {
 		GameSquare.getType();
-	   (GameSquare.TYPE_CAMP);
+//	   (GameSquare.TYPE_CAMP);
 	   return true;
 	}
 
